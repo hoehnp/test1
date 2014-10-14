@@ -37,7 +37,7 @@
  ** $QT_END_LICENSE$
  **
  ****************************************************************************/
-
+// new code
  #include <QApplication>
 
  #include "tabdialog.h"
