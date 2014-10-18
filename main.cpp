@@ -45,14 +45,14 @@
  int main(int argc, char *argv[])
  {
      QApplication app(argc, argv);
-     QString fileNam;
+     QString fileNamen;
 
      if (argc >= 2)
-         fileNam = argv[1];
+         fileNamen = argv[1];
      else
-         fileNam = ".";
+         fileNamen = ".";
 
-     TabDialog tabdialog(fileNam);
+     TabDialog tabdialog(fileNamen);
  #ifdef Q_OS_SYMBIAN
      tabdialog.showMaximized();
  #else
