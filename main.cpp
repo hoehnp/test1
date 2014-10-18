@@ -37,7 +37,7 @@
  ** $QT_END_LICENSE$
  **
  ****************************************************************************/
-// new code
+
  #include <QApplication>
 
  #include "tabdialog.h"
@@ -45,14 +45,14 @@
  int main(int argc, char *argv[])
  {
      QApplication app(argc, argv);
-     QString fileName;
+     QString fileNam;
 
      if (argc >= 2)
-         fileName = argv[1];
+         fileNam = argv[1];
      else
-         fileName = ".";
+         fileNam = ".";
 
-     TabDialog tabdialog(fileName);
+     TabDialog tabdialog(fileNam);
  #ifdef Q_OS_SYMBIAN
      tabdialog.showMaximized();
  #else
